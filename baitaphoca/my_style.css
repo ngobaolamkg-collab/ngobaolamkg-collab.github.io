@@ -1,0 +1,85 @@
+/* Khung nền hồ cá ghép hình đại dương */
+#content {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url('bg.jpg');
+    background-size: cover;          
+    background-position: center;     
+    background-repeat: no-repeat;    
+    overflow: hidden;
+}
+
+/* --- CÁ MẬP --- */
+#shark {
+    position: absolute;
+    left: 100px;
+    top: 400px;
+    animation-name: Shark;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Shark {
+    0%   { left: 100px; top: 400px; }
+    20%  { left: 300px; top: 400px; }
+    40%  { left: 500px; top: 300px; }
+    50%  { left: 500px; top: 300px; transform: scaleX(-1); }
+    60%  { left: 600px; top: 100px; }
+    80%  { left: 500px; top: 200px; }
+    100% { left: 100px; top: 400px; transform: scaleX(-1); }
+}
+
+/* --- RÙA --- */
+#turtle {
+    position: absolute;
+    left: 400px;
+    top: 350px;
+    animation: TurtleMove 12s linear infinite;
+}
+
+@keyframes TurtleMove {
+    0%   { left: 400px; top: 350px; }
+    50%  { left: 700px; top: 250px; }
+    100% { left: 400px; top: 350px; transform: scaleX(-1); }
+}
+
+/* --- THỢ LẶN --- */
+#diver {
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    animation: DiverMove 15s linear infinite;
+}
+
+@keyframes DiverMove {
+    0%   { left: 200px; top: 200px; }
+    50%  { left: 600px; top: 150px; }
+    100% { left: 200px; top: 200px; }
+}
+
+/* --- ĐÀN CÁ BƠI NGANG --- */
+#faint-school {
+    position: absolute;
+    left: 50px;
+    top: 100px;
+    animation: SwimAcross 8s linear infinite;
+}
+
+#gold-fish {
+    position: absolute;
+    left: 800px;
+    top: 450px;
+    animation: SwimBack 10s linear infinite;
+}
+
+@keyframes SwimAcross {
+    0%   { left: -150px; top: 100px; }
+    100% { left: 1050px; top: 150px; }
+}
+
+@keyframes SwimBack {
+    0%   { left: 1050px; top: 450px; transform: scaleX(-1); }
+    100% { left: -150px; top: 400px; transform: scaleX(-1); }
+}
