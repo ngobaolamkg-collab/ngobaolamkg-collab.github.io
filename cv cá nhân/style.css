@@ -1,0 +1,137 @@
+/* Thiết lập chung */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f4f0; /* Nền kem sữa ấm áp */
+    color: #3e3229; /* Chữ nâu đậm dễ đọc */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+/* Khung chính của CV */
+.cv-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 750px;
+    padding: 40px;
+    border: 1px solid #ebe3d8;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(139, 108, 82, 0.08);
+}
+
+/* Header CV */
+.cv-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 2px solid #f0e8df;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+/* Cố định kích thước khung chứa ảnh đại diện */
+.avatar-box {
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+}
+
+.avatar-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #e6d5c3; /* Viền nâu sữa nhạt */
+    box-shadow: 0 4px 12px rgba(166, 130, 99, 0.18);
+}
+
+.info-box {
+    flex-grow: 1;
+}
+
+.info-box h1 {
+    font-size: 26px;
+    color: #2c221b;
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+}
+
+.job-title {
+    font-size: 16px;
+    color: #9c7248; /* Chữ chức danh nâu caramel */
+    font-weight: 500;
+}
+
+/* Các phần mục trong CV */
+.cv-section {
+    margin-bottom: 25px;
+}
+
+.cv-section h2 {
+    font-size: 16px;
+    color: #2c221b;
+    border-bottom: 2px solid #e6d5c3; /* Đường gạch chân nâu sữa */
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.cv-section p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #594a3e;
+}
+
+/* Bố cục 2 cột cho Kỹ năng và Kinh nghiệm */
+.cv-grid {
+    display: flex;
+    gap: 30px;
+}
+
+.cv-grid .cv-section {
+    flex: 1;
+}
+
+/* Danh sách kỹ năng */
+.skill-list {
+    list-style-type: none;
+}
+
+.skill-list li {
+    background: #f5ede4; /* Nền thẻ kỹ năng màu trà sữa */
+    color: #7d5736; /* Chữ màu nâu trầm */
+    padding: 8px 14px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    font-size: 13.5px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Kinh nghiệm */
+.experience-item h3 {
+    font-size: 15px;
+    color: #2c221b;
+}
+
+.project-name {
+    font-weight: 600;
+    color: #9c7248 !important;
+    margin: 3px 0;
+}
+
+.sub-text {
+    color: #7d6d5f;
+    font-size: 13px;
+    margin-top: 4px;
+}
