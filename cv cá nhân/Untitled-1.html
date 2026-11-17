@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Cá Nhân - Ngô Bảo Lam</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #FFF7E6; /* Vanilla Cream background */
+            display: flex;
+            justify-content: center;
+            padding: 30px 0;
+        }
+
+        .cv-container {
+            width: 800px;
+            background: #ffffff;
+            display: flex;
+            box-shadow: 0 0 20px rgba(180, 106, 114, 0.15);
+        }
+
+        /* CỘT TRÁI (40%) - Tone Rosewood */
+        .cv-left {
+            width: 40%;
+            background-color: #B46A72; /* Rosewood */
+            color: #ffffff;
+            padding: 30px 20px;
+        }
+
+        .profile-img-container {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background-color: #F7C8D3; /* Blush Petal */
+            margin: 0 auto 25px auto;
+            overflow: hidden;
+            border: 4px solid #FFF7E6;
+        }
+
+        .profile-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .cv-left section {
+            margin-bottom: 25px;
+        }
+
+        .cv-left h3 {
+            font-size: 16px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #F7C8D3; /* Blush Petal */
+            padding-bottom: 5px;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+            color: #FFF7E6;
+        }
+
+        .cv-left p, .cv-left li {
+            font-size: 13px;
+            line-height: 1.5;
+            color: #FFF7E6;
+            list-style: none;
+            margin-bottom: 8px;
+        }
+
+        /* Thanh tiến độ kỹ năng */
+        .skill-item {
+            margin-bottom: 10px;
+        }
+
+        .skill-name {
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+
+        .skill-bar {
+            width: 100%;
+            height: 8px;
+            background-color: #9c5860;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background-color: #F7C8D3; /* Blush Petal */
+            border-radius: 4px;
+        }
+
+        /* CỘT PHẢI (60%) */
+        .cv-right {
+            width: 60%;
+            background-color: #ffffff;
+            color: #333333;
+            padding: 35px 30px;
+        }
+
+        .header-name {
+            margin-bottom: 25px;
+        }
+
+        .header-name h1 {
+            font-size: 26px;
+            text-transform: uppercase;
+            color: #B46A72; /* Rosewood */
+            letter-spacing: 1px;
+        }
+
+        .header-name h2 {
+            font-size: 15px;
+            color: #8c5057;
+            font-weight: 500;
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .cv-right section {
+            margin-bottom: 25px;
+        }
+
+        .cv-right h3 {
+            font-size: 16px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #B46A72; /* Rosewood */
+            padding-bottom: 5px;
+            margin-bottom: 12px;
+            color: #B46A72;
+            letter-spacing: 1px;
+        }
+
+        .cv-right p, .cv-right li {
+            font-size: 13px;
+            line-height: 1.6;
+            color: #555555;
+            margin-bottom: 10px;
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 15px;
+        }
+
+        .item-title {
+            font-weight: bold;
+            color: #B46A72;
+        }
+
+        .item-time {
+            font-size: 12px;
+            color: #8c5057;
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-container">
+        <!-- CỘT TRÁI -->
+        <div class="cv-left">
+            <div class="profile-img-container">
+                <img src="avatar_1.jpg" alt="Ảnh đại diện của Ngô Bảo Lam">
+            </div>
+
+            <section>
+                <h3>Thông tin cá nhân</h3>
+                <p><strong>Họ tên:</strong> Ngô Bảo Lam</p>
+                <p><strong>MSSV:</strong> 52.01.104.051</p>
+                <p><strong>Điện thoại:</strong> 0123456789</p>
+                <p><strong>Email:</strong> ngobaolam@gmail.com</p>
+                <p><strong>Địa chỉ:</strong> TP. Hồ Chí Minh</p>
+            </section>
+
+            <section>
+                <h3>Kỹ năng</h3>
+                <div class="skill-item">
+                    <div class="skill-name">HTML5 / CSS3</div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">C++ Programming</div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 65%;"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Photoshop</div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 70%;"></div></div>
+                </div>
+            </section>
+
+            <section>
+                <h3>Sở thích</h3>
+                <p>• Lập trình giao diện web</p>
+                <p>• Đọc sách công nghệ</p>
+                <p>• Nấu ăn & Khám phá thiết kế</p>
+            </section>
+
+            <section>
+                <h3>Người tham chiếu</h3>
+                <p><strong>Thầy/Cô hướng dẫn</strong></p>
+                <p>Trường ĐH Sư phạm TP.HCM</p>
+                <p>Phone: 0930682248</p>
+            </section>
+        </div>
+
+        <!-- CỘT PHẢI -->
+        <div class="cv-right">
+            <div class="header-name">
+                <h1>Ngô Bảo Lam</h1>
+                <h2>Information Technology Student</h2>
+            </div>
+
+            <section>
+                <h3>Giới thiệu bản thân</h3>
+                <p>Là sinh viên ngành Công nghệ thông tin tại Trường Đại học Sư phạm TP.HCM (Niên khóa 2026–2030). Tôi có niềm đam mê lớn với lập trình web front-end và thuật toán C++. Luôn chăm chỉ học hỏi, cẩn thận và hướng đến việc tạo ra các sản phẩm giao diện web tối ưu, thân thiện với người dùng.</p>
+            </section>
+
+            <section>
+                <h3>Học vấn</h3>
+                <div class="education-item">
+                    <div class="item-time">2026 - 2030</div>
+                    <div class="item-title">Cử nhân Công nghệ thông tin</div>
+                    <p>Trường Đại học Sư phạm TP.HCM (HCMUE)</p>
+                    <p>Chuyên ngành: Công nghệ thông tin. Đang theo học các môn cơ sở và chuyên ngành như C++, Thiết kế Web, Toán rời rạc.</p>
+                </div>
+                <div class="education-item">
+                    <div class="item-time">2023 - 2026</div>
+                    <div class="item-title">Tốt nghiệp THPT</div>
+                    <p>Trường THPT Võ Văn Kiệt, Kiên Giang</p>
+                </div>
+            </section>
+
+            <section>
+                <h3>Kinh nghiệm / Dự án</h3>
+                <div class="experience-item">
+                    <div class="item-time">2026 - Hiện tại</div>
+                    <div class="item-title">Phát triển Website CV cá nhân</div>
+                    <p>Thực hiện đồ án môn Thiết kế Web (COMP1802) bằng HTML5 và CSS3, bố cục chuẩn hóa 2 cột, tối ưu hiển thị giao diện và lưu trữ trên GitHub Pages.</p>
+                </div>
+                <div class="experience-item">
+                    <div class="item-time">2026</div>
+                    <div class="item-title">Thực hành giải thuật C++</div>
+                    <p>Xây dựng các module xử lý logic, thao tác chuỗi, mảng và thuật toán toán học phục vụ học tập.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>
